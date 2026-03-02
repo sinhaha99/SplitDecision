@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Split Decision</title>
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="site-header__inner">
+      <div class="site-brand">
+        <span class="site-brand__name">Split Decision</span>
+        <span class="site-brand__tagline">Sometimes one opinion is not enough.</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+
+    <div class="posts-toolbar">
+      <h1 class="posts-title">All Posts</h1>
+      <div class="posts-filters">
+        <button class="filter-btn filter-btn--active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="film">Film</button>
+        <button class="filter-btn" data-filter="tv">TV</button>
+        <button class="filter-btn" data-filter="music">Music</button>
+        <button class="filter-btn" data-filter="books">Books</button>
+      </div>
+    </div>
+
+    <div class="posts-table-wrap">
+      <table class="posts-table">
+        <thead>
+          <tr>
+            <th class="col-title">Title</th>
+            <th class="col-tags">Tags</th>
+            <th class="col-authors">Takes</th>
+            <th class="col-date">Published</th>
+          </tr>
+        </thead>
+        <tbody>
+
+          <tr class="post-row" onclick="window.location='post.html'">
+            <td class="col-title">
+              <a class="post-row__title" href="post.html">
+                Dune: Part Two — Is This the Blockbuster Cinema Has Been Waiting For?
+              </a>
+              <p class="post-row__desc">Villeneuve delivers spectacle and dread in equal measure. But does it earn its ending?</p>
+            </td>
+            <td class="col-tags">
+              <span class="tag tag--film">Film</span>
+              <span class="tag tag--scifi">Sci-Fi</span>
+            </td>
+            <td class="col-authors">
+              <span class="verdict-chip verdict-chip--hot" title="Alex: Loved it">A</span>
+              <span class="verdict-chip verdict-chip--cold" title="Jordan: Mixed feelings">J</span>
+            </td>
+            <td class="col-date">Mar 1, 2026</td>
+          </tr>
+
+          <tr class="post-row">
+            <td class="col-title">
+              <a class="post-row__title" href="#">
+                Challengers — A Film That Refuses to Pick a Side
+              </a>
+              <p class="post-row__desc">Luca Guadagnino's tennis drama is all surface tension, in the best way possible.</p>
+            </td>
+            <td class="col-tags">
+              <span class="tag tag--film">Film</span>
+              <span class="tag tag--drama">Drama</span>
+            </td>
+            <td class="col-authors">
+              <span class="verdict-chip verdict-chip--hot" title="Alex: Loved it">A</span>
+              <span class="verdict-chip verdict-chip--hot" title="Jordan: Loved it">J</span>
+            </td>
+            <td class="col-date">Feb 18, 2026</td>
+          </tr>
+
+          <tr class="post-row">
+            <td class="col-title">
+              <a class="post-row__title" href="#">
+                Shogun (2024) — The Show That Broke Television's Comfort Zone
+              </a>
+              <p class="post-row__desc">An adaptation that understands its source material well enough to improve on it.</p>
+            </td>
+            <td class="col-tags">
+              <span class="tag tag--tv">TV</span>
+              <span class="tag tag--drama">Drama</span>
+            </td>
+            <td class="col-authors">
+              <span class="verdict-chip verdict-chip--mixed" title="Alex: Mixed feelings">A</span>
+              <span class="verdict-chip verdict-chip--hot" title="Jordan: Loved it">J</span>
+            </td>
+            <td class="col-date">Feb 4, 2026</td>
+          </tr>
+
+          <tr class="post-row">
+            <td class="col-title">
+              <a class="post-row__title" href="#">
+                Charli XCX — Brat: Pop Album of the Year or Overhyped Moment?
+              </a>
+              <p class="post-row__desc">The album that made "brat summer" a cultural event. But does the music hold up to scrutiny?</p>
+            </td>
+            <td class="col-tags">
+              <span class="tag tag--music">Music</span>
+              <span class="tag tag--pop">Pop</span>
+            </td>
+            <td class="col-authors">
+              <span class="verdict-chip verdict-chip--cold" title="Alex: Not for me">A</span>
+              <span class="verdict-chip verdict-chip--hot" title="Jordan: Loved it">J</span>
+            </td>
+            <td class="col-date">Jan 22, 2026</td>
+          </tr>
+
+          <tr class="post-row">
+            <td class="col-title">
+              <a class="post-row__title" href="#">
+                The Rings of Power S2 — A Redemption Arc for Amazon's Tolkien?
+              </a>
+              <p class="post-row__desc">Season two course-corrects. But is it too little, too late?</p>
+            </td>
+            <td class="col-tags">
+              <span class="tag tag--tv">TV</span>
+              <span class="tag tag--fantasy">Fantasy</span>
+            </td>
+            <td class="col-authors">
+              <span class="verdict-chip verdict-chip--mixed" title="Alex: Mixed feelings">A</span>
+              <span class="verdict-chip verdict-chip--mixed" title="Jordan: Mixed feelings">J</span>
+            </td>
+            <td class="col-date">Jan 9, 2026</td>
+          </tr>
+
+          <tr class="post-row">
+            <td class="col-title">
+              <a class="post-row__title" href="#">
+                James — The Great American Novel Has Been Rewritten
+              </a>
+              <p class="post-row__desc">Percival Everett's retelling of Huckleberry Finn is a moral reckoning as much as a novel.</p>
+            </td>
+            <td class="col-tags">
+              <span class="tag tag--books">Books</span>
+              <span class="tag tag--fiction">Fiction</span>
+            </td>
+            <td class="col-authors">
+              <span class="verdict-chip verdict-chip--hot" title="Alex: Loved it">A</span>
+              <span class="verdict-chip verdict-chip--hot" title="Jordan: Loved it">J</span>
+            </td>
+            <td class="col-date">Dec 14, 2025</td>
+          </tr>
+
+        </tbody>
+      </table>
+    </div>
+
+  </main>
+
+  <script>
+    const DURATION = 200; // must match CSS transition duration
+
+    const buttons = document.querySelectorAll('.filter-btn');
+    const rows    = document.querySelectorAll('.post-row');
+
+    buttons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        buttons.forEach(b => b.classList.remove('filter-btn--active'));
+        btn.classList.add('filter-btn--active');
+
+        const filter = btn.dataset.filter;
+        const toShow = [];
+        const toHide = [];
+
+        rows.forEach(row => {
+          const match  = filter === 'all' || row.querySelector(`.tag--${filter}`);
+          const hidden = row.style.display === 'none';
+          if  (match && hidden)  toShow.push(row);
+          if  (!match && !hidden) toHide.push(row);
+        });
+
+        // Phase 1: fade out departing rows
+        toHide.forEach(row => row.classList.add('post-row--hidden'));
+
+        setTimeout(() => {
+          // Reflow moment: collapse departed, uncollapse arriving (both invisible)
+          toHide.forEach(row => { row.style.display = 'none'; });
+          toShow.forEach(row => {
+            row.classList.add('post-row--hidden');
+            row.style.display = '';
+          });
+
+          // Phase 2: fade in arriving rows
+          requestAnimationFrame(() => requestAnimationFrame(() => {
+            toShow.forEach(row => row.classList.remove('post-row--hidden'));
+          }));
+        }, DURATION);
+      });
+    });
+  </script>
+
+</body>
+</html>
